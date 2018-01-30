@@ -1,0 +1,336 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+a, a:focus, a:hover
+	text-decoration: none
+	cursor: pointer
+	color: #000
+
+ul
+	list-style: none
+
+*	
+	margin: 0px
+	padding: 0px
+	outline none
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #979797
+	opacity: 1
+
+*:-moz-placeholder
+	color: #979797
+	opacity: 1
+
+*::-moz-placeholder
+	color: #979797
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #979797
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #979797
+body input:required:valid,
+body textarea:required:valid
+	color: #979797
+
+html, body
+	height: 100%
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+	color #000000
+	background-color: #cacaca;
+
+	h1
+		color: $accent
+		font-weight: normal
+		font-size: 32px
+	h2
+		font-weight: normal
+		font-size: 18px
+		margin-bottom: 5px
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.wrapper 
+	width: 1257px
+	margin: auto
+	position: relative
+
+.clearfix:after 
+  content: ""
+  display: table
+  clear: both
+
+.menu 
+	&__left
+		width: 257px
+		box-sizing: border-box
+		padding: 20px
+		padding-left: 0
+		background-color: $menu_color
+		float: left
+		border-right: 1px solid #e4e4e4
+		position: absolute;
+		top: 0;
+		bottom: 0;
+		&-border 
+			height: 1px
+			width: 144px
+			box-sizing: border-box
+			border-top: 1px solid #cacaca
+			margin-left: 20px
+			margin-bottom: 20px
+		.logo
+			margin: auto
+			width: 109px
+			height: 141px
+			display: block
+			background: url("../img/logo.png") no-repeat
+		&-items 
+			width: 100%
+			margin-top: 50px
+			li
+				margin-bottom: 8px
+				&:last-child
+					margin-bottom: 30px
+			a 
+				color: #000
+				padding-left: 15px
+				border-left: 5px solid transparent
+				transition all 0.3s					
+				&.active
+					box-sizing: border-box
+					color: $accent
+					display: block
+					border-left: 5px solid $accent
+		&-social
+			li
+				margin-left: 20px
+			a 
+				color: #4d4d4d
+				margin-bottom: 10px
+				display: block
+				background-repeat: no-repeat
+				position: relative
+				padding-left: 35px
+				.fa 
+					color: $accent
+					font-size: 35px
+					position: absolute
+					left: 0
+					bottom: -4px
+					&-envelope 
+						font-size: 20px
+						bottom: 3px
+						left: -2px
+					&-skype
+						font-size: 23px
+						bottom: 3px
+						left: -2px
+					&-paper-plane-o
+						font-size: 20px
+						bottom: 0px;
+						left: -1px;
+	&__top 
+		min-height: 50px
+		float: left
+		background-color: $accent
+		width: calc(100% - 257px)
+		font-size: 14px
+		margin-left: 257px;
+		&-links 
+			float: right
+			padding-top: 13px
+			&-login
+				color: #fff
+				display: inline-block
+				padding-right: 20px
+				margin-right: 20px
+				border-right: 1px solid $accent-light
+				&:hover
+					color: #fff
+			&-lang
+				color: $accent-light-text
+				margin-right: 15px
+				transition: all 0.3s
+				&:last-child
+					margin-right: 75px
+				&.active,&:hover
+					color: #fff
+	&__right
+		width: 56px
+		box-sizing: border-box
+		position: absolute
+		right: 0
+		height: 100%
+		background-color: rgba(0,0,0,0.1)
+		border-left: 1px solid  rgba(0,0,0, 0.03)
+		&-options
+			background: url('../img/options.png') no-repeat center
+			width: 100%
+			height: 50px
+
+
+.content
+	float: left
+	width: calc(100% - 257px)
+	background-color: #fff
+	padding-left: 60px
+	padding-right: 110px
+	margin-left: 257px
+	box-sizing: border-box
+	&__block
+		&-inputs 
+			margin-bottom: 30px
+			&.second-line
+				margin-bottom: 20px
+			&.center
+				text-align: center
+			input[type="text"]
+				border: 1px solid #979797
+				border-radius: 5px
+				padding: 10px
+				font-size: 16px
+				line-height: 1.25
+				width: 260px
+				box-sizing: border-box
+				margin-right: 20px
+				transition: all 0.3s
+				&:last-child
+					margin-right: 0
+				&:focus
+					border-color: $accent
+			&-but,input[type="submit"]
+				line-height: 1	
+				border-radius: 5px
+				box-sizing: border-box
+				color: #000
+				padding: 10px 15px
+				text-align: center
+				background-color: $accent-lighter
+				float: left
+				margin-right: 20px
+				width: calc(25% - 15px)
+				height: 55px
+				display: flex
+				justify-content: center
+				align-items: center
+				cursor: pointer
+				transition: all 0.3s
+				input[type="radio"],input[type="checkbox"]
+					width: 0.1px;
+					height: 0.1px;
+					opacity: 0;
+					overflow: hidden;
+					position: absolute;
+					z-index: -1;					
+				&:hover
+					background-color: $accent
+					color: #fff
+				span
+					vertical-align: middle
+					span
+						font-size: 13px
+						display: block
+				&:last-child
+					margin-right: 0
+				&.active
+					background-color: $accent
+					color: #fff
+				&.interests
+					width: calc(33.53% - 15px)
+				&.grey
+					background-color: #f0f0f0
+					color:#787878
+					height: 45px
+					font-style: 18px
+					padding: 10px 60px
+					width: auto
+					&:hover
+						color: inherit
+					&:before
+						content: ''
+						background: url('../img/file.png') no-repeat
+						height: 100%
+						width: 20px
+						margin-top: 5px
+						margin-right: 10px
+			textarea				
+				border: 1px solid #979797
+				border-radius: 5px
+				padding: 10px
+				font-size: 16px
+				line-height: 1.25
+				box-sizing: border-box
+				resize: none
+				width: 100%
+				margin-bottom: 20px
+				transition: all 0.3s
+				&:focus
+					border-color: $accent
+			input[type="submit"]
+				background-color: $accent
+				color: #fff
+				border: none
+				text-transform: uppercase
+				font-size: 18px
+				padding: 15px 100px
+				width: auto
+				float: none
+				display: inline-block
+			&-quantity
+				&-plus,&-minus
+					padding: 15px
+					background-color: $accent
+					color: #fff
+					font-size: 18px
+					display: inline-block
+					cursor: pointer
+					border-top-left-radius: 5px
+					border-bottom-left-radius: 5px
+					float: left
+					width: 45px
+					text-align: center
+				&-plus
+					border-top-left-radius: 0px
+					border-bottom-left-radius: 0px
+					border-top-right-radius: 5px
+					border-bottom-right-radius: 5px
+
+				input[type="text"]
+					float: left
+					background-color: $accent-lighter
+					border: none
+					width: 55px
+					padding: 20px 9px;
+					border-radius: 0
+					margin: 0
+
+

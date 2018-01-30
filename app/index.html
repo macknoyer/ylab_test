@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<link rel="stylesheet" href="css/main.min.css">
+
+</head>
+
+<body>
+	<div class="wrapper clearfix">
+		<div class="menu__left">
+			<a href="#" class="logo"></a>
+			<ul class="menu__left-items">
+				<li><a href="#" class="active">О команде</a></li>
+				<li><a href="#">Модели сотрудничества</a></li>
+				<li><a href="#">Наши компетенции</a></li>
+				<li><a href="#">Преимущества</a></li>
+				<li><a href="#">С нами уже работают</a></li>
+				<li><a href="#">Вопрос–ответ</a></li>
+			</ul>
+			<div class="menu__left-border"></div>
+			<ul class="menu__left-social">
+				<li><a href="#" class="menu__left-social-mobile"><i class="fa fa-mobile" aria-hidden="true"></i>+7 (906) 750-58-34</a></li>
+				<li><a href="#" class="menu__left-social-email"><i class="fa fa-envelope" aria-hidden="true"></i>mail@yiilab.com</a></li>
+				<li><a href="#" class="menu__left-social-skype"><i class="fa fa-skype" aria-hidden="true"></i>gredlst</a></li>
+				<li><a href="#" class="menu__left-social-telegram"><i class="fa fa-paper-plane-o" aria-hidden="true"></i>@yiilab</a></li>
+			</ul>
+		</div>
+		<div class="menu__top">
+			<div class="menu__top-links">
+				<a href="#" class="menu__top-links-login">Вход для клиентов</a>
+				<a href="#" class="menu__top-links-lang active">RU</a>
+				<a href="#" class="menu__top-links-lang">EN</a>
+				<a href="#" class="menu__top-links-lang">DE</a>
+			</div>
+		</div>
+		<div class="menu__right">
+			<div class="menu__right-options"></div>
+		</div>
+		<div class="content">
+			<h1>Запрос консультации</h1>
+			<div class="content__block">
+				<form action="">
+					<h2>Контактные данные</h2>
+					<div class="content__block-inputs">
+						<input type="text" placeholder="Ваше имя" />
+						<input type="text" placeholder="Телефон" />
+						<input type="text" placeholder="E-mail" />
+					</div>
+					<h2>Кто вы</h2>
+					<div class="content__block-inputs radiobtns clearfix">
+						<label class="content__block-inputs-but active"><input type="radio" name="business"><span>Стартап</span></label>
+						<label class="content__block-inputs-but"><input type="radio" name="business"><span>Малый и средний бизнес</span></label>
+						<label class="content__block-inputs-but"><input type="radio" name="business"><span>Крупный бизнес</span></label>
+						<label class="content__block-inputs-but"><input type="radio" name="business"><span>Агентство</span></label>
+					</div>
+					<h2>Что вас интересует?</h2>
+					<div class="content__block-inputs second-line checkboxes clearfix">
+						<label class="content__block-inputs-but interests active" for="Yii"><input type="checkbox" name="Yii" id="Yii"><span>Yii / Yii 2</span></label>
+						<label class="content__block-inputs-but interests" for="Django"><input type="checkbox" name="Django" id="Django"><span>Django / Flask / Falcon</span></label>
+						<label class="content__block-inputs-but interests" for="Spring"><input type="checkbox" name="Spring" id="Spring"><span>Spring / Java core / Java se</span></label>
+					</div>
+					<div class="content__block-inputs checkboxes clearfix">
+						<label class="content__block-inputs-but interests" for="React"><input type="checkbox" name="React" id="React"><span>React / Angular / Node.js</span></label>
+						<label class="content__block-inputs-but interests" for="Native"><input id="Native" type="checkbox" name="Native"><span>React Native <span>(Разработка мобильных приложений)</span></span></label>
+						<label class="content__block-inputs-but interests" for="Spring2"><input id="Spring2" type="checkbox" name="Spring2"><span>Другое</span></label>
+					</div>
+					<h2>Количество разработчиков</h2>
+					<div class="content__block-inputs clearfix">
+						<div class="content__block-inputs-quantity">
+							<div class="content__block-inputs-quantity-minus">-</div>
+							<input class="content__block-inputs-quantity-input" type="text" value="1111">
+							<div class="content__block-inputs-quantity-plus">+</div>
+						</div>
+					</div>
+					<h2>Комментарий</h2>
+					<div class="content__block-inputs clearfix">
+						<textarea name="name" id="" cols="30" rows="8"></textarea>
+						<div class="content__block-inputs-but grey"><span>Прикрепить файл</span></div>
+					</div>
+					<div class="content__block-inputs center">
+						<input type="submit" value="отправить" />
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
